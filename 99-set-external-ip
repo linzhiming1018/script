@@ -1,0 +1,9 @@
+if [ "$ACTION" = "ifup" ] && [ "$INTERFACE" = "wan" ]; then
+    external_ip=$(curl -s https://api.ipify.org/)
+    if [ -z "$external_ip" ]; then
+        exit 1
+    fi
+    uci set upnpd.config.external_ip="$external_ip"
+    uci commit upnpd
+    /etc/init.d/miniupnpd restart
+fi
