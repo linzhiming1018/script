@@ -1,0 +1,3 @@
+https://dl.google.com/chrome/install/GoogleChromeStandaloneEnterprise64.msi
+https://dl.google.com/release2/10/windows-7/GoogleChromeStandaloneEnterprise64.msi
+https://dl.google.com/release2/10/windows-8/GoogleChromeStandaloneEnterprise64.msi
